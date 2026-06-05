@@ -31,6 +31,12 @@ parent-directory/
     ├── success2026-01-31 10.00.00.csv
     └── error2026-01-31 10.00.00.csv
 ```
+### Support.py Function
+`support.py` is a utility module and it handles all the file I/O so `main.py` stays clean. It has four functions:
+1. Reads a CSV into a pandas DataFrame, replaces any blank cells with empty strings (so the Bulk API doesn't choke on NaN values), then returns it as a list of dictionaries — one dict per row.
+2. Opens a JSON config file and returns it as a Python object. This is where the DML operation and object API name get read from.
+3. Looks at the keys returned in the Bulk API result and splits them into two lists: 1) for success records, and 2) for errors by removing the columns that don't belong in each file (e.g. removes errors from success keys, removes success and created from error keys).
+4. Takes the full result set, splits it into successes and errors, and writes each to a timestamped CSV in the current directory. Uses the key lists from the function above to control which columns appear in each file.
 
 ### Setup
 #### Step 1: Clone the Repo
