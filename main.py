@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from simple_salesforce import Salesforce
 from simple_salesforce.exceptions import SalesforceMalformedRequest
 
-import helper as hp
+import support as hp
 
 def build_nested_payload(flat_record):
     """Converts dot-notation keys into nested dictionaries for external IDs."""
