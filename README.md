@@ -1,5 +1,5 @@
 # Conduit
-![description](https://raw.githubusercontent.com/kpratt-yvr/Conduit/refs/heads/main/images/conduit.jpg) 
+![Header](https://raw.githubusercontent.com/kpratt-yvr/Conduit/refs/heads/main/images/conduit.jpg) 
 
 
 ## Overview 
@@ -68,3 +68,5 @@ When prompted, enter the path to the parent directory and Conduit handles everyt
 
 ### Notes
 This is not a replacement for Data Loader, rather it's a wrapper around the parts that shouldn't require human attention.
+
+![footer](https://raw.githubusercontent.com/kpratt-yvr/Conduit/refs/heads/main/images/updated%20footer.jpeg)
